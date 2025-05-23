@@ -13,14 +13,14 @@
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.4);
-  padding: 60px 10%;
+  padding: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .hero-banner-text {
-  max-width: 500px;
+  width: 500px;
 }
 
 .hero-banner-text h1 {
@@ -102,6 +102,12 @@
   display: inline-block;
 }
 
+@media (max-width: 724px) {
+  .hero-banner-overlay {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 
 /* ======= LOGO BANNER ======= */
 .logo-slider {

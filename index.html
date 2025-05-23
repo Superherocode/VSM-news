@@ -14,72 +14,109 @@
 <body>
   <!-- HEADER -->
   <header class="header">
-    <!-- header-top -->
     <div class="container">
       <div class="top-bar">
         <div class="left-info">
           <span><i class="fa-solid fa-envelope"></i> example@gmail.com</span>
           <span class="divider">|</span>
-          <span><i class="fa-solid fa-location-dot"></i> 710 1st St. Easton, PA
-            18042 | Chester County</span>
+          <span><i class="fa-solid fa-location-dot"></i> 710 1st St. Easton, PA 18042</span>
         </div>
         <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
         </div>
       </div>
-      <!-- Header Middle: Logo, Search, User/Cart -->
+
       <div class="header-middle">
         <div class="logo">
           <a href="#"><img src="./images/logo-vsm.png" alt="Zunzo Logo" /></a>
         </div>
-
         <div class="search-bar">
           <div class="search-wrapper">
-            <select class="category-select">
+            <select class="category-select" aria-label="Select category">
               <option>All Categories</option>
               <option>Running Shoes</option>
               <option>Apparel</option>
             </select>
-            <input type="text" placeholder="Search for products..." />
+            <input type="text" placeholder="Search for products..." aria-label="Search products" />
             <button class="search-btn">SEARCH</button>
           </div>
         </div>
-
         <div class="header-icons">
-          <a href="#" class="icon-link">
+          <a href="#" class="icon-link" aria-label="Login or Register">
             <i class="fa-regular fa-user"></i>
             <span>Login/Register</span>
           </a>
-          <a href="#" class="icon-link">
+          <a href="#" class="icon-link" aria-label="Shopping Cart">
             <i class="fa-solid fa-cart-shopping"></i>
             <span>Cart</span>
           </a>
         </div>
       </div>
 
-      <!-- Header Bottom: Navigation -->
       <div class="header-bottom">
-        <div class="menu-left">
-          <a href="#" class="category-btn">
-            <i class="fa-solid fa-bars"></i> CATEGORIES <i class="fa-solid fa-chevron-down"></i>
-          </a>
-          <nav class="main-nav">
-            <a href="#">HOME <i class="fa-solid fa-chevron-down"></i></a>
-            <a href="#">PAGES <i class="fa-solid fa-chevron-down"></i></a>
-            <a href="#">OUR EVENTS <i class="fa-solid fa-chevron-down"></i></a>
-            <a href="#">SHOP <i class="fa-solid fa-chevron-down"></i></a>
-            <a href="#">NEWS <i class="fa-solid fa-chevron-down"></i></a>
-            <a href="#">CONTACT US</a>
+        <div class="header-container">
+          <div class="logo logo1">
+            <img src="./images/logo-vsm.png" alt="Zunzo" />
+          </div>
+          <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <nav class="main-nav" id="mainNav">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">OUR EVENTS</a>
+            <a href="#">LATEST NEWS</a>
+            <a href="#">CONTACT</a>
           </nav>
+          <div class="hotline">
+            <span>Hotline:</span> <strong>+01 1234 8888</strong>
+          </div>
         </div>
-        <div class="hotline">
-          <span>Hotline:</span> <strong>+01 1234 8888</strong>
+
+        <div class="mobile-menu" id="mobileMenu">
+          <div class="mobile-menu-header">
+            <img src="./images/logo-vsm.png" alt="Zunzo" />
+            <button class="close-btn" id="closeMenu" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <nav class="mobile-nav">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">OUR EVENTS</a>
+            <a href="#">LATEST NEWS</a>
+            <a href="#">CONTACT</a>
+          </nav>
+          <div class="mobile-contact">
+            <span><i class="fa-solid fa-envelope"></i> example@gmail.com</span>
+            <span><i class="fa-solid fa-location-dot"></i> 710 1st St. Easton, PA 18042</span>
+          </div>
+          <div class="mobile-social">
+            <span>Social Media</span>
+            <div class="social-icons">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+          </div>
+          <div class="mobile-icons">
+            <a href="#" aria-label="Login or Register">
+              <i class="fa-regular fa-user"></i>
+              <span>Login/Register</span>
+            </a>
+            <a href="#" aria-label="Shopping Cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span>Cart</span>
+            </a>
+          </div>
         </div>
       </div>
+      <div class="overlay" id="overlay"></div>
+    </div>
   </header>
 
   <!-- =========== BANNER 1 ========== -->
